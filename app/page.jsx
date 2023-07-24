@@ -1,10 +1,17 @@
-
+import Feed from "@components/Feed";
 
 const Home = () => {
   return (
-    <div>
-      Home
-    </div>
+   <section className="w-full flex center flex-col">
+    <h1 className="head_text text-center">IssuesThree
+    <br className="max-md:hidden" />
+    <span className="orange_gradient text-center">Discover</span></h1>
+    <p className="desc text-center">With IssuesThree, anyone can start a publication that combines a personal website, blog, and email newsletter or podcast. It's quick and simple,</p>
+
+
+   <Feed />
+
+   </section>
   )
 }
 
