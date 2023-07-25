@@ -21,3 +21,7 @@
 ### I want to be able to log in
 
 ### I want to subscribe to other users
+
+25.07.2023
+
+## Test Google Auth
