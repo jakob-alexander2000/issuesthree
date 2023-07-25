@@ -1,9 +1,24 @@
-import React from 'react'
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import { useSession } from "next-auth/react";
+import { usePathname, useRouter } from "next/navigation";
 
-const PostCard = () => {
+const PostCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   return (
-    <div>
-      PostCard
+    <div classsName="prompt_card">
+      <div className="flex justify-between items-start gap-5">
+        <div>
+          <Image 
+          src={post.creator.image}
+          alt="user_image"
+          width={40}
+          height={40}
+          className="rounded-full object-contain"
+          />
+        </div>
+      </div>
+    
     </div>
   )
 }
