@@ -3,7 +3,7 @@ import Post from "@models/post";
 
 export const POST = async (request) => {
     const { userId, post, tag } = await request.json();
-
+console.log(userId);
     try {
         await connectToDB();
         const newPost = new Post ({
