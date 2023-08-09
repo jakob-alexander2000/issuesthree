@@ -21,13 +21,13 @@ const Nav = () => {
   return (
     <nav className='flex-between w-full mb-16 pt-3'>
       <Link href='/' className='flex gap-2 flex-center'>
-        <Image
+        {/* <Image
           src='/assets/images/logo.svg'
           alt='logo'
           width={30}
           height={30}
           className='object-contain'
-        />
+        /> */}
         <p className='logo_text'>ISSUES3</p>
       </Link>
 
@@ -48,7 +48,7 @@ const Nav = () => {
                 src={session?.user.image}
                 width={37}
                 height={37}
-                className='rounded-full'
+                className='rouned-none'
                 alt='profile'
               />
             </Link>
@@ -80,7 +80,7 @@ const Nav = () => {
               src={session?.user.image}
               width={37}
               height={37}
-              className='rounded-full'
+              className='rounded-none'
               alt='profile'
               onClick={() => setToggleDropdown(!toggleDropdown)}
             />
